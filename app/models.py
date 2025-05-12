@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Float, Date, Time
-from database import Base
+from app.database import Base
 
 class OptaBi(Base):
     __tablename__ = "opta_bi"
