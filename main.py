@@ -28,5 +28,5 @@ def get_db():
 
 @app.get("/records")
 def read_records(db: Session = Depends(get_db)):
-    records = db.query(OptaBi).limit(100).all()
+    records = db.query(OptaBi).all()
     return [r.__dict__ for r in records]
